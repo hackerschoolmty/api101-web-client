@@ -1,0 +1,17 @@
+.sign_up_container {
+  width: 80%;
+  margin: 0 auto;
+  background: lighten(#ccc, 10%);
+  padding: 15px;
+}
+
+.link_container {
+  margin: 0 auto;
+  width: 90%;
+
+  .comment {
+    padding-left: 30px;
+    border-bottom: 1px dashed rgba(#ccc, 0.8);
+    margin-bottom: 10px;
+  }
+}

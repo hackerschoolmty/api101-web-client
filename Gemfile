@@ -7,3 +7,5 @@ gem 'sinatra'
 
 gem 'sass'
 gem 'rack-coffee'
+gem 'pry'
+gem 'hsnews_rb', github: "hackerschoolmty/hsnews_rb"

@@ -2,10 +2,12 @@ require 'rubygems'
 require 'bundler'
 Bundler.require(:default)
 require 'sinatra'
+require 'hsnews_rb'
 
 require 'sass/plugin/rack'
 require 'compass'
 require './application'
+require './session_helpers'
 
 
 root = ::File.dirname(__FILE__)

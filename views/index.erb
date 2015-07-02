@@ -1,5 +1,18 @@
-<div class="row text-center">
-  <h2>Sinatra + Compass + Furatto</h2>
-
-  <p>This is a basic template using Sinatra and Furatto</p>
-</div>
+<table class="striped responsive">
+  <thead>
+    <tr>
+      <td>Title</td>
+      <td>URL</td>
+      <td>Author email</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% links.each do |link| %>
+      <tr>
+        <td><a href="/links/<%= link.id %>"><%= link.title %></a></td>
+        <td><a href="<%= link.url %>" target="_blank"><%= link.url %></a></td>
+        <td><%= link.user['email'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,19 @@
+<div class="row link_container">
+  <h2><%= link.title %></h2>
+  <a href="<%= link.url %>"><%= link.url %></a>
+  <br />
+  <div class="row">
+    <form action="/comments" method="post">
+      <textarea name="content" id="" rows="8" cols="40"></textarea>
+      <input type="submit" value="Comment" class="button large alpha success" />
+    </form>
+  </div>
+
+  <div class="row">
+    <% comments.each do |comment| %>
+      <div class="comment">
+        <p><%= comment.content %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
